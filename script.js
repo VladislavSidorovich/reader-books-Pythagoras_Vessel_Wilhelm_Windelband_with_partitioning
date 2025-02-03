@@ -1178,7 +1178,7 @@ App.prototype.onSearchClick1 = function (searchTerm) {
     this.doSearch1(searchTerm)
         .then(results => {
             const container = this.qs(".setting-content1");
-            container.innerHTML = ""; // Очистка контейнера
+            container.innerHTML = "Есть Полное и есть Пустое. Есть Семя и есть Форма."; // Очистка контейнера
 
             results.slice(0, 10).forEach(result => {
                 let resultEl = document.createElement("div");
@@ -1202,7 +1202,7 @@ App.prototype.onSearchClick2 = function (searchTerm) {
     this.doSearch2(searchTerm)
         .then(results => {
             const container = this.qs(".setting-content2");
-            container.innerHTML = ""; // Очистка контейнера
+            container.innerHTML = "Появление Пустоты"; // Очистка контейнера
 
             results.slice(0, 10).forEach(result => {
                 let resultEl = document.createElement("div");
@@ -1225,7 +1225,7 @@ App.prototype.onSearchClick2 = function (searchTerm) {
 App.prototype.onSearchClick3 = function (searchTerm) {
     this.doSearch3(searchTerm).then(results => {
         const container = this.qs(".setting-content3");
-        container.innerHTML = ""; // Очистка контейнера
+        container.innerHTML = "Есть Душа и Тело. Душа вырастает в пустотах ума и повторяет Круг бытия"; // Очистка контейнера
         
         results.slice(0, 10).forEach(result => {
             let resultEl = document.createElement("div");
@@ -1246,7 +1246,7 @@ App.prototype.onSearchClick4 = function (searchTerm) {
     this.doSearch4(searchTerm).then(results => {
 
         const container = this.qs(".setting-content4");
-        container.innerHTML = ""; // Очистка контейнера
+        container.innerHTML = "Частота (Темп) кругов Бытия тела задает Ритм Вселенной"; // Очистка контейнера
         results.slice(0, 10).forEach(result => {
         //  console.log(result.cfi)
             let resultEl = document.createElement("div");
@@ -1265,7 +1265,7 @@ App.prototype.onSearchClick4 = function (searchTerm) {
 App.prototype.onSearchClick5 = function (searchTerm) {
     this.doSearch5(searchTerm).then(results => {
         const container = this.qs(".setting-content5");
-        container.innerHTML = ""; // Очистка контейнера
+        container.innerHTML = "Если Другое не появляется, Мир застывает подобно кристаллу"; // Очистка контейнера
 
         results.slice(0, 20).forEach(result => {
             let resultEl = document.createElement("div");
@@ -1284,7 +1284,7 @@ App.prototype.onSearchClick5 = function (searchTerm) {
 App.prototype.onSearchClick6 = function (searchTerm) {
     this.doSearch6(searchTerm).then(results => {
         const container = this.qs(".setting-content6");
-        container.innerHTML = ""; // Очистка контейнера
+        container.innerHTML = "И только мудрый Садовник сможет соотнести скорость "; // Очистка контейнера
 
         results.slice(0, 10).forEach(result => {
             let resultEl = document.createElement("div");
