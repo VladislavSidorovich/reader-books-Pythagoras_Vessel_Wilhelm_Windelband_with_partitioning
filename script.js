@@ -1178,7 +1178,7 @@ App.prototype.onSearchClick1 = function (searchTerm) {
     this.doSearch1(searchTerm)
         .then(results => {
             const container = this.qs(".setting-content1");
-            container.innerHTML = "Есть Полное и есть Пустое. Есть Семя и есть Форма."; // Очистка контейнера
+            container.innerHTML = ""; // Очистка контейнера
 
             results.slice(0, 10).forEach(result => {
                 let resultEl = document.createElement("div");
@@ -1186,7 +1186,7 @@ App.prototype.onSearchClick1 = function (searchTerm) {
                 let excerpt = result.excerpt.trim().replace(/^(\.\.\.|\s)+/, '');
 
                 resultEl.innerHTML = `
-                    <a href="${result.cfi}" class="result-link">${excerpt}</a>
+                    <a href="${result.cfi}" class="result-link">(1) Есть Полное и есть Пустое. Есть Семя и есть Форма.</a>
                 `;
                 resultEl.querySelector(".result-link").addEventListener("click", this.onResultClick.bind(this, result.cfi));
                 container.appendChild(resultEl);
