@@ -1186,7 +1186,7 @@ App.prototype.onSearchClick1 = function (searchTerm) {
                 let excerpt = result.excerpt.trim().replace(/^(\.\.\.|\s)+/, '');
 
                 resultEl.innerHTML = `
-                    <a href="${result.cfi}" class="result-link">(1) Есть Полное и есть Пустое. Есть Семя и есть Форма.</a>
+                    <a href="${result.cfi}" class="result-link">(1) При длительном изучении истории философии</a>
                 `;
                 resultEl.querySelector(".result-link").addEventListener("click", this.onResultClick.bind(this, result.cfi));
                 container.appendChild(resultEl);
@@ -1202,7 +1202,7 @@ App.prototype.onSearchClick2 = function (searchTerm) {
     this.doSearch2(searchTerm)
         .then(results => {
             const container = this.qs(".setting-content2");
-            container.innerHTML = "Появление Пустоты"; // Очистка контейнера
+            container.innerHTML = ""; // Очистка контейнера
 
             results.slice(0, 10).forEach(result => {
                 let resultEl = document.createElement("div");
@@ -1210,7 +1210,7 @@ App.prototype.onSearchClick2 = function (searchTerm) {
                 let excerpt = result.excerpt.trim().replace(/^(\.\.\.|\s)+/, '');
 
                 resultEl.innerHTML = `
-                    <a href="${result.cfi}" class="result-link">${excerpt}</a>
+                    <a href="${result.cfi}" class="result-link">(2) Имеется в виду, что идеи в своем чистом платоническом виде</a>
                 `;
                 resultEl.querySelector(".result-link").addEventListener("click", this.onResultClick.bind(this, result.cfi));
                 container.appendChild(resultEl);
@@ -1225,7 +1225,7 @@ App.prototype.onSearchClick2 = function (searchTerm) {
 App.prototype.onSearchClick3 = function (searchTerm) {
     this.doSearch3(searchTerm).then(results => {
         const container = this.qs(".setting-content3");
-        container.innerHTML = "Есть Душа и Тело. Душа вырастает в пустотах ума и повторяет Круг бытия"; // Очистка контейнера
+        container.innerHTML = ""; // Очистка контейнера
         
         results.slice(0, 10).forEach(result => {
             let resultEl = document.createElement("div");
@@ -1234,7 +1234,7 @@ App.prototype.onSearchClick3 = function (searchTerm) {
             let excerpt = result.excerpt.trim().replace(/^(\.\.\.|\s)+/, '');
 
             resultEl.innerHTML = `
-                <a href="${result.cfi}" class="result-link">${excerpt}</a>
+                <a href="${result.cfi}" class="result-link">(3) Не имея возможности вдаваться в подробное исследование данного вопроса</a>
             `;
             resultEl.querySelector(".result-link").addEventListener("click", this.onResultClick.bind(this, result.cfi));
             container.appendChild(resultEl);
@@ -1246,7 +1246,7 @@ App.prototype.onSearchClick4 = function (searchTerm) {
     this.doSearch4(searchTerm).then(results => {
 
         const container = this.qs(".setting-content4");
-        container.innerHTML = "Частота (Темп) кругов Бытия тела задает Ритм Вселенной"; // Очистка контейнера
+        container.innerHTML = ""; // Очистка контейнера
         results.slice(0, 10).forEach(result => {
         //  console.log(result.cfi)
             let resultEl = document.createElement("div");
@@ -1254,7 +1254,7 @@ App.prototype.onSearchClick4 = function (searchTerm) {
             let excerpt = result.excerpt.trim().replace(/^(\.\.\.|\s)+/, '');
 
             resultEl.innerHTML = `
-                <a href="${result.cfi}" class="result-link">${excerpt}</a>
+                <a href="${result.cfi}" class="result-link">(4) Проникновение идей в социальную жизнь чаще всего связано с особыми формами </a>
             `;
             resultEl.querySelector(".result-link").addEventListener("click", this.onResultClick.bind(this, result.cfi));
             container.appendChild(resultEl);
@@ -1265,7 +1265,7 @@ App.prototype.onSearchClick4 = function (searchTerm) {
 App.prototype.onSearchClick5 = function (searchTerm) {
     this.doSearch5(searchTerm).then(results => {
         const container = this.qs(".setting-content5");
-        container.innerHTML = "Если Другое не появляется, Мир застывает подобно кристаллу"; // Очистка контейнера
+        container.innerHTML = ""; // Очистка контейнера
 
         results.slice(0, 20).forEach(result => {
             let resultEl = document.createElement("div");
@@ -1273,7 +1273,7 @@ App.prototype.onSearchClick5 = function (searchTerm) {
             let excerpt = result.excerpt.trim().replace(/^(\.\.\.|\s)+/, '');
 
             resultEl.innerHTML = `
-                <a href="${result.cfi}" class="result-link">${excerpt}</a>
+                <a href="${result.cfi}" class="result-link">(5) Далее, с помощью мудрецов (в пифагорейской школе, видимо, с участием самого Пифагора)</a>
             `;
             resultEl.querySelector(".result-link").addEventListener("click", this.onResultClick.bind(this, result.cfi));
             container.appendChild(resultEl);
@@ -1284,7 +1284,7 @@ App.prototype.onSearchClick5 = function (searchTerm) {
 App.prototype.onSearchClick6 = function (searchTerm) {
     this.doSearch6(searchTerm).then(results => {
         const container = this.qs(".setting-content6");
-        container.innerHTML = "И только мудрый Садовник сможет соотнести скорость "; // Очистка контейнера
+        container.innerHTML = ""; // Очистка контейнера
 
         results.slice(0, 10).forEach(result => {
             let resultEl = document.createElement("div");
@@ -1292,7 +1292,7 @@ App.prototype.onSearchClick6 = function (searchTerm) {
             let excerpt = result.excerpt.trim().replace(/^(\.\.\.|\s)+/, '');
 
             resultEl.innerHTML = `
-                <a href="${result.cfi}" class="result-link">${excerpt}</a>
+                <a href="${result.cfi}" class="result-link">(6) При следующем расширении круга, когда та или иная ячейка таблицы</a>
             `;
             resultEl.querySelector(".result-link").addEventListener("click", this.onResultClick.bind(this, result.cfi));
             container.appendChild(resultEl);
@@ -1313,7 +1313,7 @@ App.prototype.onSearchClick7 = function (searchTerm) {
             let excerpt = result.excerpt.trim().replace(/^(\.\.\.|\s)+/, '');
 
             resultEl.innerHTML = `
-                <a href="${result.cfi}" class="result-link">${excerpt}</a>
+                <a href="${result.cfi}" class="result-link">(7) Для того, чтобы придать существование идее в миру</a>
             `;
             resultEl.querySelector(".result-link").addEventListener("click", this.onResultClick.bind(this, result.cfi));
             container.appendChild(resultEl);
